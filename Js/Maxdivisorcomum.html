@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    var A = parseInt(prompt("Digite o primeiro número"));
+    var B = parseInt(prompt("Digite o segundo número"));
+    var resto;
+    
+    do {
+    resto = A%B;
+    A=B;
+    B=resto;
+    } while(resto!=0);
+    
+document.write("O maior divisor comum destes dois números é: " + A);
+    
+</script>
+<link href="styles.css" rel="stylesheet"/>
+<p class="established"></p><a href="interface.html" target="_blank"><input type="button" value="Voltar" /></a></p>

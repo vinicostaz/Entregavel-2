@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    var n = prompt("Quantos números você quer somar?");
+    var numero;
+    var soma = 0;
+    var i = 0;
+    
+    while (i < n) {
+        numero = parseInt(prompt("Digite um número para a soma, já foram digitados: " + i));
+        i = i + 1;
+        soma = soma + numero;
+    }
+    
+    document.write(soma);
+</script>
+<link href="styles.css" rel="stylesheet"/>
+<p class="established"></p><a href="interface.html" target="_blank"><input type="button" value="Voltar" /></a></p>

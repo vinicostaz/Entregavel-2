@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    var N = parseInt(prompt("Quantos números da sequência de Fibonacci você quer?"));
+    var A = 0;
+    var B = 1;
+    var X = 2;
+    var C;
+    
+    if(N==1) {
+        document.write(A);
+    } else {
+        document.write(A + ", " + B);
+    }
+    
+    while(X<N) {
+        X++;
+        C = A+B;
+        document.write(", " + C);
+        A=B;
+        B=C;
+    }
+</script>
+<link href="styles.css" rel="stylesheet"/>
+<p class="established"></p><a href="interface.html" target="_blank"><input type="button" value="Voltar" /></a></p>
